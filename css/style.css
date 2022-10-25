@@ -717,3 +717,9 @@ ul, ol {
 .fp-watermark {
   display: none !important;
 }
+
+.fp-table {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}

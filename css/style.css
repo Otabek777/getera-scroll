@@ -104,6 +104,7 @@ ul, ol {
   opacity: 0;
   -webkit-transition: all 0.001s ease;
   transition: all 0.001s ease;
+  background: #000000;
 }
 
 .section1 {
@@ -409,7 +410,7 @@ ul, ol {
 .services__block {
   display: block;
   width: 606px;
-  height: 746px;
+  height: 690px;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(70.91%, #161616), to(rgba(0, 0, 0, 0)));
   background: linear-gradient(180deg, #161616 70.91%, rgba(0, 0, 0, 0) 100%);
   position: relative;
@@ -471,11 +472,12 @@ ul, ol {
 
 .section2.active .services__block, .section3.active .services__block {
   opacity: 1;
+  height: 746px;
 }
 
 .section3 {
   height: 100vh;
-  background: url(../img/section-bg.png) no-repeat center/cover;
+  background: url(../img/section-bg2.png) no-repeat center/cover;
   background-attachment: fixed;
   padding-left: 187px;
   padding-top: 48px;
@@ -493,6 +495,12 @@ ul, ol {
   width: 100%;
   margin-left: auto;
   position: relative;
+  opacity: 0;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  -webkit-transition-delay: 0.5s;
+          transition-delay: 0.5s;
+  padding-top: 50px;
 }
 .aboutUs__wrap .title_h2 {
   margin-bottom: 55px;
@@ -522,6 +530,11 @@ ul, ol {
   margin-bottom: 32px;
   position: relative;
   z-index: 1;
+}
+
+.section4.active .aboutUs__wrap {
+  opacity: 1;
+  padding-top: 0px;
 }
 
 .aboutUs__wrap::after {
@@ -1093,7 +1106,7 @@ ul, ol {
 
   .services__block {
     width: 100%;
-    height: 100vh;
+    height: 100vh !important;
     margin: 0;
     overflow: hidden;
   }

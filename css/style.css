@@ -13,6 +13,47 @@
 }
 
 body {
+  margin: 0;
+  --color-text: #fff;
+  --color-bg: #fff;
+  --color-link: #000;
+  --color-link-hover: #fff;
+  --color-content: #fff;
+  --font-alt: freight-display-pro, serif;
+  color: var(--color-text);
+  background-color: var(--color-bg);
+  font-family: soleil, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* Cursor styles */
+  --cursor-stroke: #fff;
+  --cursor-fill: none;
+  --cursor-stroke-width: 2px;
+  cursor: none;
+}
+
+*:hover {
+  cursor: none;
+}
+
+@media (any-pointer: fine) {
+  .cursor {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    display: block;
+    pointer-events: none;
+    opacity: 0;
+  }
+
+  .cursor__inner {
+    fill: var(--cursor-fill);
+    stroke: var(--cursor-stroke);
+    stroke-width: var(--cursor-stroke-width);
+  }
+}
+body {
   font-family: "Cormorant Infant", serif;
 }
 
@@ -112,6 +153,22 @@ ul, ol {
   background: #000000 url(../img/banner.png) no-repeat center/cover;
   padding-left: 105px;
   padding-top: 69px;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.section_wrap {
+  opacity: 0;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  -webkit-transition-delay: 0.1s;
+          transition-delay: 0.1s;
+}
+
+.section1.active .section_wrap {
+  opacity: 1;
+  -webkit-transition-delay: 0.6s;
+          transition-delay: 0.6s;
 }
 
 .logo {
@@ -488,6 +545,8 @@ ul, ol {
   padding-top: 117px;
   padding-right: 343px;
   background: url(../img/section4.png) no-repeat center/cover;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
 }
 
 .aboutUs__wrap {
@@ -498,8 +557,8 @@ ul, ol {
   opacity: 0;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
-  -webkit-transition-delay: 0.5s;
-          transition-delay: 0.5s;
+  -webkit-transition-delay: 0.7s;
+          transition-delay: 0.7s;
   padding-top: 50px;
 }
 .aboutUs__wrap .title_h2 {
@@ -532,11 +591,6 @@ ul, ol {
   z-index: 1;
 }
 
-.section4.active .aboutUs__wrap {
-  opacity: 1;
-  padding-top: 0px;
-}
-
 .aboutUs__wrap::after {
   content: "";
   width: 420px;
@@ -545,6 +599,13 @@ ul, ol {
   position: absolute;
   top: 27px;
   right: 24px;
+  opacity: 0;
+  -webkit-transform: translateY(50px);
+          transform: translateY(50px);
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+  -webkit-transition-delay: 0.8s;
+          transition-delay: 0.8s;
 }
 
 .aboutUs__block {
@@ -610,11 +671,23 @@ ul, ol {
   margin-right: 0;
 }
 
+.section4.active .aboutUs__wrap {
+  opacity: 1;
+  padding-top: 0px;
+}
+.section4.active .aboutUs__wrap::after {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
 .section5 {
   height: 100vh;
   padding-top: 71px;
   padding-left: 185px;
   background: url(../img/end-page-bg.png) no-repeat center/cover;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
 }
 
 .endPage__logo {
@@ -662,6 +735,13 @@ ul, ol {
 .endPage__wrap {
   position: relative;
   margin-bottom: 113px;
+  opacity: 0;
+  -webkit-transform: translateY(30px);
+          transform: translateY(30px);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  -webkit-transition-delay: 0.2s;
+          transition-delay: 0.2s;
 }
 
 .endPage__wrap::after {
@@ -672,12 +752,24 @@ ul, ol {
   position: absolute;
   top: -38px;
   left: 119px;
+  opacity: 0;
+  -webkit-transform: translateY(50px);
+          transform: translateY(50px);
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+  -webkit-transition-delay: 0.2s;
+          transition-delay: 0.2s;
 }
 
 .endPage__btns {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  opacity: 0;
+  -webkit-transform: translateY(30px);
+          transform: translateY(30px);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 .endPage__btns .btn {
   display: -webkit-box;
@@ -748,6 +840,28 @@ ul, ol {
 }
 .endPage__btns .btn:hover {
   border: 1px solid #DF9746;
+}
+
+.section5.active .endPage__wrap {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  -webkit-transition-delay: 0.7s;
+          transition-delay: 0.7s;
+}
+.section5.active .endPage__wrap::after {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  -webkit-transition-delay: 0.7s;
+          transition-delay: 0.7s;
+}
+.section5.active .endPage__btns {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  -webkit-transition-delay: 1.2s;
+          transition-delay: 1.2s;
 }
 
 .btn_burgir {
@@ -1003,6 +1117,14 @@ ul, ol {
 
 .services_mobile {
   display: none;
+}
+
+.bg-top {
+  background-position-y: -500px;
+}
+
+.bg-bottom {
+  background-position-y: 500px;
 }
 
 @media screen and (max-width: 768px) {

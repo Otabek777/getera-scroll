@@ -26,3 +26,32 @@ $(".btn_burgir").click(function() {
         },300);
     }
 });
+$(document).on('wheel', function(e){
+    setTimeout(function() {
+        if($(".section2").hasClass('active')) {
+            $(".section1").addClass("bg-bottom");
+        };
+        if($(".section3").hasClass('active')) {
+            $(".section4").addClass("bg-top");
+        };
+        if($(".section4").hasClass('active')) {
+            $(".section5").addClass("bg-top");
+        };
+        if($(".section5").hasClass('active')) {
+            $(".section4").addClass("bg-bottom");
+        };
+
+        function deleteClassBg (className) {
+            if($(className).hasClass('active')) {
+                $(className).removeClass("bg-top");
+                $(className).removeClass("bg-bottom");
+            }
+        };
+        deleteClassBg(".section1");
+        deleteClassBg(".section2");
+        deleteClassBg(".section3");
+        deleteClassBg(".section4");
+        deleteClassBg(".section5");
+    }, 000000001);
+});
+    

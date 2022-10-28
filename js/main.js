@@ -1,4 +1,4 @@
-
+// Animation Start
 setTimeout(function() {
     $(".main").addClass("open");
 }, 3500);
@@ -6,6 +6,7 @@ setTimeout(function() {
     $(".getera_bg").addClass("none");
 }, 5000);
 
+// Burgir
 $(".btn_burgir").click(function() {
     var thisClass = $(this);
     if(thisClass.hasClass('active')) {
@@ -26,6 +27,8 @@ $(".btn_burgir").click(function() {
         },300);
     }
 });
+
+// Scroll animation Bg
 $(document).on('wheel', function(e){
     setTimeout(function() {
         if($(".section2").hasClass('active')) {
@@ -54,4 +57,19 @@ $(document).on('wheel', function(e){
         deleteClassBg(".section5");
     }, 000000001);
 });
-    
+setTimeout(function() {
+}, 2000);
+
+// crumbs
+$("#link-main").click(function() {
+    $( ".fp-sr-only:contains('section1')" ).click();
+});
+$("#link-services").click(function() {
+    $( ".fp-sr-only:contains('section2')" ).click();
+});
+$("#link-about").click(function() {
+    $( ".fp-sr-only:contains('section4')" ).click();
+});
+$("#link-contact").click(function() {
+    $( ".fp-sr-only:contains('section5')" ).click();
+});

@@ -374,6 +374,10 @@ ul, ol {
 .section_btns .btn svg {
   margin-right: 16px;
 }
+.section_btns .btn svg path {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
 .section_btns .btn span:nth-child(1), .section_btns .btn span:nth-child(2) {
   display: block;
   width: 100%;
@@ -416,6 +420,10 @@ ul, ol {
 }
 .section_btns .btn:hover {
   border: 1px solid #DF9746;
+  color: #DF9746;
+}
+.section_btns .btn:hover svg path {
+  fill: #DF9746;
 }
 
 .main.open {
@@ -478,9 +486,12 @@ ul, ol {
   transition: all 1s ease;
   -webkit-transition-delay: 0.3s;
           transition-delay: 0.3s;
+  overflow: hidden;
 }
 .services__block .img {
   width: 100%;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 .services__block .content {
   position: absolute;
@@ -489,6 +500,8 @@ ul, ol {
   z-index: 1;
   width: 100%;
   padding: 0 32px;
+  -webkit-transition: all 0.8s ease;
+  transition: all 0.8s ease;
 }
 .services__block .content .title {
   font-weight: 700;
@@ -525,6 +538,15 @@ ul, ol {
   letter-spacing: 0.05em;
   color: #FFFFFF;
   margin-bottom: 24px;
+}
+
+.services__block:hover .img {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+.services__block:hover .content {
+  -webkit-transform: translateY(-20px);
+          transform: translateY(-20px);
 }
 
 .section2.active .services__block, .section3.active .services__block {
@@ -798,6 +820,10 @@ ul, ol {
 .endPage__btns .btn svg {
   margin-right: 16px;
 }
+.endPage__btns .btn svg path {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
 .endPage__btns .btn span:nth-child(1), .endPage__btns .btn span:nth-child(2) {
   display: block;
   width: 100%;
@@ -840,6 +866,10 @@ ul, ol {
 }
 .endPage__btns .btn:hover {
   border: 1px solid #DF9746;
+  color: #DF9746;
+}
+.endPage__btns .btn:hover svg path {
+  fill: #DF9746;
 }
 
 .section5.active .endPage__wrap {

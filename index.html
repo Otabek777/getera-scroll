@@ -17,27 +17,27 @@
     <div class="menu_bar">
         <ul class="ul">
             <li class="li">
-                <a href="#" class="item">Об агенстве
+                <p id="link-main" class="item">Об агенстве
                     <span>Об агенстве</span>
-                </a>
+                </p>
                 
             </li>
             <li class="li">
-                <a href="#" class="item">Услуги
+                <p id="link-services" class="item">Услуги
                     <span>Услуги</span>
-                </a>
+                </p>
                 
             </li>
             <li class="li">
-                <a href="#" class="item">о нас
+                <p id="link-about" class="item">о нас
                     <span>о нас</span>
-                </a>
+                </p>
                 
             </li>
             <li class="li">
-                <a href="#" class="item">Контакты
+                <p id="link-contact" class="item">Контакты
                     <span>Контакты</span>
-                </a>
+                </p>
                 
             </li>
         </ul>
@@ -274,6 +274,7 @@
         </defs>
         <circle class="cursor__inner" cx="110" cy="110" r="60"></circle>
     </svg>
+    <div class="fp-arrow"></div>
     
     <script src="js/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.12/fullpage.min.js"></script>
@@ -285,7 +286,7 @@
             scrollHorizontally: false,
             navigation: true,
             scrollingSpeed: 1000,
-            controlArrows: true,
+            navigationTooltips: ['section1', 'section2', 'section3', 'section4', 'section5', 'section6', 'section7'],
         });
         $('.aboutUs__slider').slick({
             infinite: true,

@@ -34,6 +34,12 @@ $(document).on('wheel', function(e){
         if($(".section2").hasClass('active')) {
             $(".section1").addClass("bg-bottom");
         };
+        if($(".section2").hasClass('active')) {
+            $(".section3").addClass("bg-top-vh");
+        };
+        if($(".section3").hasClass('active')) {
+            $(".section2").addClass("bg-bottom-vh");
+        };
         if($(".section3").hasClass('active')) {
             $(".section4").addClass("bg-top");
         };
@@ -50,12 +56,18 @@ $(document).on('wheel', function(e){
                 $(className).removeClass("bg-bottom");
             }
         };
+        function deleteClassBg2 (className) {
+            if($(className).hasClass('active')) {
+                $(className).removeClass("bg-top-vh");
+                $(className).removeClass("bg-bottom-vh");
+            }
+        };
         deleteClassBg(".section1");
-        deleteClassBg(".section2");
-        deleteClassBg(".section3");
+        deleteClassBg2(".section2");
+        deleteClassBg2(".section3");
         deleteClassBg(".section4");
         deleteClassBg(".section5");
-    }, 000000001);
+    }, 0);
 });
 setTimeout(function() {
 }, 2000);

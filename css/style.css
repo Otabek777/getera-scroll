@@ -454,6 +454,11 @@ ul, ol {
   background-attachment: fixed;
   padding-left: 187px;
   padding-top: 48px;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+.section2 .title_h2 {
+  opacity: 0;
 }
 
 .title_h2 {
@@ -481,11 +486,9 @@ ul, ol {
   position: relative;
   margin-right: 175px;
   font-family: "Open Sans", sans-serif;
+  -webkit-transition: all 0.1s ease;
+  transition: all 0.1s ease;
   opacity: 0;
-  -webkit-transition: all 1s ease;
-  transition: all 1s ease;
-  -webkit-transition-delay: 0.3s;
-          transition-delay: 0.3s;
   overflow: hidden;
 }
 .services__block .img {
@@ -549,17 +552,33 @@ ul, ol {
           transform: translateY(-20px);
 }
 
-.section2.active .services__block, .section3.active .services__block {
-  opacity: 1;
-  height: 746px;
-}
-
 .section3 {
   height: 100vh;
-  background: url(../img/section-bg2.png) no-repeat center/cover;
+  background: url(../img/section-bg.png) no-repeat center/cover;
   background-attachment: fixed;
   padding-left: 187px;
   padding-top: 48px;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+.section3 .title_h2 {
+  opacity: 0;
+  -webkit-transition: all 0.1s ease;
+  transition: all 0.1s ease;
+}
+
+.section2.active .title_h2, .section3.active .title_h2 {
+  opacity: 1;
+  -webkit-transition-delay: 1.1s;
+          transition-delay: 1.1s;
+}
+.section2.active .services__block, .section3.active .services__block {
+  opacity: 1;
+  height: 746px;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+  -webkit-transition-delay: 0.9s;
+          transition-delay: 0.9s;
 }
 
 .section4 {
@@ -1155,6 +1174,14 @@ ul, ol {
 
 .bg-bottom {
   background-position-y: 500px;
+}
+
+.bg-top-vh {
+  background-position-y: -100vh;
+}
+
+.bg-bottom-vh {
+  background-position-y: 100vh;
 }
 
 @media screen and (max-width: 768px) {

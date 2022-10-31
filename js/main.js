@@ -39,7 +39,7 @@ $("#link-about").click(function() {
     $( ".fp-sr-only:contains('section4')" ).click();
 });
 $("#link-contact").click(function() {
-    $( ".fp-sr-only:contains('section5')" ).click();
+    $( ".fp-sr-only:contains('section6')" ).click();
 });
 
 // arrows
@@ -67,6 +67,10 @@ function scrollAnimation (scrollEvent) {
             };
             if($(".section5").hasClass('active')) {
                 $(".section4").addClass("bg-bottom");
+                $(".section6").addClass("bg-top");
+            };
+            if($(".section6").hasClass('active')) {
+                $(".section5").addClass("bg-bottom");
             };
     
             function deleteClassBg (className) {
@@ -78,6 +82,7 @@ function scrollAnimation (scrollEvent) {
             deleteClassBg(".section1");
             deleteClassBg(".section4");
             deleteClassBg(".section5");
+            deleteClassBg(".section6");
             if ($(".section1").hasClass('active')) {
                 $("#btn_up").addClass("opacity");
             } else {
@@ -88,7 +93,7 @@ function scrollAnimation (scrollEvent) {
             } else {
                 $("#btn_down").removeClass("opacity");
             }
-        }, 0);
+        }, 1);
     });
 }
 scrollAnimation('wheel');

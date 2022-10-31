@@ -603,6 +603,25 @@ ul, ol {
           transition-delay: 0.7s;
   padding-top: 50px;
 }
+.aboutUs__wrap .slick-dots {
+  bottom: 0;
+}
+.aboutUs__wrap .slick-dots li {
+  width: 10px;
+  height: 10px;
+  margin: 0 8px;
+  border-radius: 50%;
+  background: #DF9746;
+  opacity: 0.2;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.aboutUs__wrap .slick-dots li button {
+  display: none;
+}
+.aboutUs__wrap .slick-dots li.slick-active {
+  opacity: 1;
+}
 .aboutUs__wrap .title_h2 {
   margin-bottom: 55px;
   position: relative;
@@ -703,7 +722,15 @@ ul, ol {
   color: #D8BD8B;
 }
 .aboutUs__box .title_h5 .icon {
+  min-width: 82px;
   width: 88px;
+  height: 47px;
+  position: relative;
+}
+.aboutUs__box .title_h5 .icon svg {
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 .aboutUs__box .p {
   margin-top: 12px;
@@ -798,6 +825,20 @@ ul, ol {
   z-index: 1;
 }
 
+.endPage__text_bottom {
+  font-family: "Open Sans", sans-serif;
+  max-width: 600px;
+  width: 100%;
+  margin-top: 130px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 150%;
+  letter-spacing: 0.05em;
+  color: #DF9746;
+  position: relative;
+  z-index: 1;
+}
+
 .endPage__wrap {
   position: relative;
   margin-bottom: 113px;
@@ -816,7 +857,7 @@ ul, ol {
   height: 178px;
   background: url(../img/leaflet.svg) no-repeat center;
   position: absolute;
-  top: -38px;
+  bottom: -38px;
   left: 119px;
   opacity: 0;
   -webkit-transform: translateY(50px);

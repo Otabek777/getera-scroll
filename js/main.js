@@ -78,18 +78,17 @@ function scrollAnimation (scrollEvent) {
             deleteClassBg(".section1");
             deleteClassBg(".section4");
             deleteClassBg(".section5");
+            if ($(".section1").hasClass('active')) {
+                $("#btn_up").addClass("opacity");
+            } else {
+                $("#btn_up").removeClass("opacity");
+            }
+            if ($(".page_last").hasClass('active')) {
+                $("#btn_down").addClass("opacity");
+            } else {
+                $("#btn_down").removeClass("opacity");
+            }
         }, 0);
-
-        if ($(".section1").hasClass('active')) {
-            $("#btn_up").addClass("opacity");
-        } else {
-            $("#btn_up").removeClass("opacity");
-        }
-        if ($(".page_last").hasClass('active')) {
-            $("#btn_down").addClass("opacity");
-        } else {
-            $("#btn_down").removeClass("opacity");
-        }
     });
 }
 scrollAnimation('wheel');

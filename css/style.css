@@ -466,6 +466,11 @@ ul, ol {
   opacity: 0;
   overflow: hidden;
 }
+.services__block .img_wrap {
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  background-color: #171716;
+}
 .services__block .img {
   width: 100%;
   -webkit-transition: all 0.5s ease;
@@ -533,7 +538,7 @@ ul, ol {
   margin-bottom: 24px;
 }
 
-.services__block:hover .img {
+.services__block:hover .img_wrap {
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
 }
@@ -1278,6 +1283,11 @@ ul, ol {
 
 .bg-bottom {
   background-position-y: 500px;
+}
+
+.fp-overflow::-webkit-scrollbar {
+  width: 0 !important;
+  opacity: 0 !important;
 }
 
 @media screen and (max-width: 768px) {

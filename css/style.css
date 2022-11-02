@@ -1426,7 +1426,7 @@ ul, ol {
   }
 
   .services__block .content .text {
-    height: 350px;
+    height: 330px;
     max-width: 309px;
     width: 100%;
     padding-top: 11px;
@@ -1471,8 +1471,23 @@ ul, ol {
   .btn_up, .btn_down {
     right: 43px;
   }
+
+  .services__block .content {
+    bottom: auto;
+    top: 525px;
+  }
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 380px) {
+  .services__block .img {
+    width: 140%;
+    height: auto;
+  }
+
+  .services__block .content {
+    bottom: 0;
+    top: auto;
+  }
+
   .main.open .section_h1 .h1, .section_h1::after {
     font-size: 46px;
   }

@@ -85,7 +85,15 @@ function scrollAnimation (scrollEvent) {
             deleteClassBg(".section6");
             if ($(".section1").hasClass('active')) {
                 $("#btn_up").addClass("opacity");
+                $(".mobile_soc").removeClass("opacity");
+                setTimeout(function() {
+                    $(".mobile_soc").removeClass("active");
+                }, 300);
             } else {
+                $(".mobile_soc").addClass("active");
+                setTimeout(function() {
+                    $(".mobile_soc").addClass("opacity");
+                }, 100);
                 $("#btn_up").removeClass("opacity");
             }
             if ($(".page_last").hasClass('active')) {

@@ -1290,7 +1290,34 @@ ul, ol {
   opacity: 0 !important;
 }
 
+.mobile_soc {
+  display: none;
+}
+
 @media screen and (max-width: 768px) {
+  .mobile_soc {
+    display: none;
+    position: fixed;
+    z-index: 100;
+    top: 130px;
+    right: 34px;
+    opacity: 0;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+  .mobile_soc .link {
+    display: block;
+    margin-bottom: 23px;
+  }
+
+  .mobile_soc.active {
+    display: block;
+  }
+
+  .mobile_soc.opacity {
+    opacity: 1;
+  }
+
   .services_mobile {
     display: block;
   }
@@ -1460,12 +1487,28 @@ ul, ol {
     transition: all 0.2s ease;
   }
 
+  #fp-nav {
+    top: auto;
+    bottom: 130px;
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+
+  #fp-nav ul li, .fp-slidesNav ul li {
+    margin-bottom: 60px;
+  }
+
+  #fp-nav ul li::after {
+    height: 60px;
+  }
+
   .btn_up {
-    top: 12vh;
+    top: auto;
+    bottom: 510px;
   }
 
   .btn_down {
-    bottom: 12vh;
+    bottom: 60px;
   }
 
   .btn_up, .btn_down {
@@ -1477,15 +1520,49 @@ ul, ol {
     top: 525px;
   }
 }
-@media screen and (max-width: 380px) {
-  .services__block .img {
-    width: 140%;
-    height: auto;
-  }
-
+@media screen and (max-width: 414px) {
   .services__block .content {
     bottom: 0;
     top: auto;
+  }
+
+  .services__block .content .text {
+    height: 355px;
+  }
+}
+@media screen and (max-width: 400px) {
+  #fp-nav {
+    top: auto;
+    bottom: 100px;
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+
+  #fp-nav ul li, .fp-slidesNav ul li {
+    margin-bottom: 50px;
+  }
+
+  #fp-nav ul li::after {
+    height: 50px;
+  }
+
+  .btn_up {
+    top: auto;
+    bottom: 435px;
+  }
+
+  .btn_down {
+    bottom: 40px;
+  }
+
+  .mobile_soc {
+    right: 20px;
+    top: 100px;
+  }
+
+  .services__block .img {
+    width: 140%;
+    height: auto;
   }
 
   .main.open .section_h1 .h1, .section_h1::after {
@@ -1504,6 +1581,8 @@ ul, ol {
   }
 
   .services__block .content {
+    top: 420px;
+    bottom: auto;
     padding-left: 12px;
     padding-right: 50px;
   }
@@ -1558,5 +1637,11 @@ ul, ol {
     font-size: 24px;
     line-height: 26px;
     margin-bottom: 12px;
+  }
+}
+@media screen and (max-width: 380px) {
+  .services__block .content {
+    top: auto;
+    bottom: 0;
   }
 }

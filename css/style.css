@@ -1520,6 +1520,11 @@ ul, ol {
     top: 525px;
   }
 }
+@media screen and (max-width: 430px) {
+  .services__block .content {
+    top: 420px;
+  }
+}
 @media screen and (max-width: 414px) {
   .services__block .content {
     bottom: 0;

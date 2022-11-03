@@ -1367,9 +1367,11 @@ ul, ol {
     width: 230px;
     height: 99px;
     position: absolute;
-    top: 18px;
+    top: 40px;
     left: 16px;
     margin-bottom: 0;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
   }
 
   .btn_burgir {
@@ -1579,7 +1581,7 @@ ul, ol {
 
   .aboutUs__box {
     width: 100% !important;
-    margin-bottom: 100px;
+    margin-bottom: 40px;
   }
 
   .aboutUs__box:last-child {
@@ -1662,11 +1664,6 @@ ul, ol {
     height: 270px;
   }
 
-  .services__block .content .text p {
-    font-size: 14px;
-    margin-bottom: 12px;
-  }
-
   #fp-nav.fp-right {
     right: 20px;
   }
@@ -1711,12 +1708,21 @@ ul, ol {
   }
 
   .aboutUs__box {
-    margin-bottom: 72px;
+    margin-bottom: 56px;
   }
 }
 @media screen and (max-width: 380px) {
   .services__block .content {
     top: auto;
     bottom: 0;
+  }
+
+  .services__block .content .text p {
+    font-size: 14px;
+    margin-bottom: 12px;
+  }
+
+  .aboutUs__box {
+    margin-bottom: 45px;
   }
 }

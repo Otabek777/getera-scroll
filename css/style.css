@@ -1437,9 +1437,9 @@ ul, ol {
 
   .services__block {
     width: 100%;
-    height: 100vh !important;
+    min-height: 100vh;
+    height: auto;
     margin: 0;
-    overflow: hidden;
   }
 
   .services__block:nth-child(2) {
@@ -1447,7 +1447,7 @@ ul, ol {
   }
 
   .services__block .img {
-    height: 564px;
+    height: 525px;
     width: auto;
     position: absolute;
     top: 0;
@@ -1472,11 +1472,10 @@ ul, ol {
   }
 
   .services__block .content .text {
-    height: 330px;
+    height: auto;
     max-width: 309px;
     width: 100%;
     padding-top: 11px;
-    overflow-y: auto;
   }
   .services__block .content .text p {
     font-size: 16px;
@@ -1536,8 +1535,12 @@ ul, ol {
   }
 
   .services__block .content {
+    position: relative;
+    top: auto;
     bottom: auto;
-    top: 525px;
+    left: auto;
+    right: auto;
+    padding-top: 500px;
   }
 
   .menu_bar {
@@ -1545,7 +1548,7 @@ ul, ol {
   }
 
   .section4 {
-    padding: 0px 70px 86px 42px;
+    padding: 0px 0px 86px 42px;
     background: url(../img/about-us1.png) no-repeat center/cover;
   }
   .section4 .title_h2 {
@@ -1553,7 +1556,7 @@ ul, ol {
   }
 
   .section5 {
-    padding: 26px 70px 86px 42px;
+    padding: 0px 0px 86px 42px;
     background: url(../img/about-us2.png) no-repeat center/cover;
   }
   .section5 .title_h2 {
@@ -1563,6 +1566,10 @@ ul, ol {
   .section4 .title_h2, .section5 .title_h2 {
     margin-bottom: 11px;
     padding-top: 26px;
+  }
+
+  .aboutUs__wrap {
+    padding-right: 70px;
   }
 
   .aboutUs__wrap::after {
@@ -1594,22 +1601,8 @@ ul, ol {
   }
 }
 @media screen and (max-width: 430px) {
-  .services__block .content {
-    top: 420px;
-  }
-
   .logo {
     top: 50px;
-  }
-}
-@media screen and (max-width: 414px) {
-  .services__block .content {
-    bottom: 0;
-    top: auto;
-  }
-
-  .services__block .content .text {
-    height: 355px;
   }
 }
 @media screen and (max-width: 400px) {
@@ -1642,11 +1635,6 @@ ul, ol {
     top: 100px;
   }
 
-  .services__block .img {
-    width: 140%;
-    height: auto;
-  }
-
   .main.open .section_h1 .h1, .section_h1::after {
     font-size: 46px;
   }
@@ -1663,14 +1651,8 @@ ul, ol {
   }
 
   .services__block .content {
-    top: 420px;
-    bottom: auto;
     padding-left: 12px;
     padding-right: 50px;
-  }
-
-  .services__block .content .text {
-    height: 270px;
   }
 
   #fp-nav.fp-right {
@@ -1713,7 +1695,11 @@ ul, ol {
   }
 
   .section4, .section5 {
-    padding: 0 60px 50px 12px;
+    padding: 0 0px 50px 12px;
+  }
+
+  .aboutUs__wrap {
+    padding-right: 60px;
   }
 
   .aboutUs__box {
@@ -1721,11 +1707,6 @@ ul, ol {
   }
 }
 @media screen and (max-width: 380px) {
-  .services__block .content {
-    top: auto;
-    bottom: 0;
-  }
-
   .services__block .content .text p {
     font-size: 14px;
     margin-bottom: 12px;

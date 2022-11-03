@@ -1709,7 +1709,7 @@ ul, ol {
     margin-bottom: 45px;
   }
 
-  .services__block:hover .img {
+  .services__block .img {
     height: 400px;
   }
 

@@ -1610,7 +1610,7 @@ ul, ol {
 
   .aboutUs__wrap {
     padding-right: 70px;
-    padding-bottom: 70px;
+    padding-bottom: 80px;
     margin-left: 0;
   }
 
@@ -1631,7 +1631,7 @@ ul, ol {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding-bottom: 70px;
+    padding-bottom: 80px;
   }
   .endPage__btns .btn {
     width: 100%;

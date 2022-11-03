@@ -1335,7 +1335,7 @@ ul, ol {
     display: block;
   }
 
-  .section6, .title_h2 {
+  .title_h2 {
     display: none;
   }
 
@@ -1499,7 +1499,7 @@ ul, ol {
 
   #fp-nav {
     top: auto;
-    bottom: 150px;
+    bottom: 120px;
     -webkit-transform: translate(0);
             transform: translate(0);
   }
@@ -1514,11 +1514,11 @@ ul, ol {
 
   .btn_up {
     top: auto;
-    bottom: 450px;
+    bottom: 500px;
   }
 
   .btn_down {
-    bottom: 80px;
+    bottom: 50px;
   }
 
   .btn_up, .btn_down {
@@ -1565,6 +1565,31 @@ ul, ol {
     padding-bottom: 50px;
   }
 
+  .section6 {
+    background: url(../img/end-page-mobile.png) no-repeat center/cover;
+    padding: 0 0 100px 40px;
+  }
+
+  .endPage__wrap {
+    padding-right: 70px;
+    margin-bottom: 126px;
+  }
+
+  .endPage__btns {
+    max-width: 240px;
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-bottom: 50px;
+  }
+  .endPage__btns .btn {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 13px;
+  }
+
   .aboutUs__wrap::after {
     width: 214px;
     height: 90px;
@@ -1592,6 +1617,17 @@ ul, ol {
   .aboutUs__box:last-child {
     margin-bottom: 0;
   }
+
+  .endPage__wrap::after {
+    display: none;
+  }
+
+  .endPage__logo {
+    width: 230px;
+    height: 99px;
+    margin-top: 26px;
+    margin-bottom: 11px;
+  }
 }
 @media screen and (max-width: 430px) {
   .logo {
@@ -1601,7 +1637,7 @@ ul, ol {
 @media screen and (max-width: 400px) {
   #fp-nav {
     top: auto;
-    bottom: 120px;
+    bottom: 100px;
     -webkit-transform: translate(0);
             transform: translate(0);
   }
@@ -1616,11 +1652,11 @@ ul, ol {
 
   .btn_up {
     top: auto;
-    bottom: 380px;
+    bottom: 430px;
   }
 
   .btn_down {
-    bottom: 60px;
+    bottom: 30px;
   }
 
   .mobile_soc {
@@ -1691,12 +1727,26 @@ ul, ol {
     padding: 0 0px 50px 12px;
   }
 
-  .aboutUs__wrap {
-    padding-right: 60px;
+  .section6 {
+    padding: 0 0px 50px 12px;
   }
 
   .aboutUs__box {
     margin-bottom: 56px;
+  }
+
+  .endPage__title {
+    font-size: 32px;
+    line-height: 44px;
+    margin-bottom: 24px;
+  }
+
+  .endPage__text_bottom {
+    max-width: 230px;
+    width: 100%;
+    margin-top: 40px;
+    font-size: 20px;
+    line-height: 150%;
   }
 }
 @media screen and (max-width: 380px) {

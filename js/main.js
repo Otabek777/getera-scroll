@@ -27,6 +27,17 @@ $(".btn_burgir").click(function() {
         },300);
     }
 });
+$(".menu_bar .item").click(function() {
+    $(".menu_bar").addClass("opacity");
+    $(".btn_burgir").removeClass("active");
+    setTimeout(function() {
+        $(".menu_bar").removeClass("open");
+        $(".btn_burgir").removeClass("one");
+    },300);
+    setTimeout(function() {
+        $(".menu_bar").removeClass("opacity");
+    },600);
+});
 
 // crumbs
 $("#link-main").click(function() {

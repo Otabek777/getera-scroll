@@ -1304,10 +1304,6 @@ ul, ol {
 }
 
 @media screen and (max-width: 768px) {
-  .main {
-    min-height: 101vh;
-  }
-
   #fp-nav ul li:nth-child(3), #fp-nav ul li:nth-child(4), #fp-nav ul li:nth-child(5) {
     display: none;
   }
@@ -1540,7 +1536,8 @@ ul, ol {
     bottom: auto;
     left: auto;
     right: auto;
-    padding-top: 500px;
+    padding-top: 470px;
+    padding-bottom: 50px;
   }
 
   .menu_bar {
@@ -1570,6 +1567,7 @@ ul, ol {
 
   .aboutUs__wrap {
     padding-right: 70px;
+    padding-bottom: 50px;
   }
 
   .aboutUs__wrap::after {
@@ -1714,5 +1712,13 @@ ul, ol {
 
   .aboutUs__box {
     margin-bottom: 45px;
+  }
+
+  .services__block:hover .img {
+    height: 400px;
+  }
+
+  .services__block .content {
+    padding-top: 360px;
   }
 }

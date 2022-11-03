@@ -1303,7 +1303,54 @@ ul, ol {
   display: none;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1500px) {
+  .section1, .section2, .section3, .section6 {
+    padding-left: 50px;
+  }
+
+  .section4, .section5 {
+    padding-right: 200px;
+  }
+
+  .services__block {
+    margin-right: 36px;
+  }
+}
+@media screen and (max-width: 1050px) {
+  .logo {
+    margin-bottom: 70px;
+  }
+
+  .btn_burgir {
+    top: 30px;
+  }
+
+  .menu_bar {
+    top: 5px;
+  }
+
+  .btn_up, .btn_down {
+    right: 80px;
+  }
+
+  .section1, .section2, .section3, .section6 {
+    padding-top: 30px;
+    padding-left: 30px;
+  }
+
+  .section6 {
+    padding-bottom: 50px;
+  }
+
+  .section4, .section5 {
+    padding-top: 30px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .aboutUs__block .text:last-child {
+    margin-bottom: 0;
+  }
+
   #fp-nav ul li:nth-child(3), #fp-nav ul li:nth-child(4), #fp-nav ul li:nth-child(5) {
     display: none;
   }
@@ -1341,7 +1388,7 @@ ul, ol {
 
   .section1 {
     padding-bottom: 50px;
-    padding-left: 42px;
+    padding-left: 40px;
     position: relative;
     background-position: 45% 0px;
   }
@@ -1414,8 +1461,10 @@ ul, ol {
   }
 
   .section_btns {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 
   .section_btns .btn {
@@ -1443,7 +1492,7 @@ ul, ol {
   }
 
   .services__block .img {
-    height: 525px;
+    height: 700px;
     width: auto;
     position: absolute;
     top: 0;
@@ -1464,7 +1513,7 @@ ul, ol {
 
   .services__block .content .text {
     height: auto;
-    max-width: 309px;
+    max-width: 470px;
     width: 100%;
     padding-top: 11px;
   }
@@ -1531,7 +1580,7 @@ ul, ol {
     bottom: auto;
     left: auto;
     right: auto;
-    padding-top: 470px;
+    padding-top: 630px;
     padding-bottom: 50px;
   }
 
@@ -1540,7 +1589,7 @@ ul, ol {
   }
 
   .section4 {
-    padding: 0px 0px 86px 42px;
+    padding: 0px 0px 0px 40px;
     background: url(../img/about-us1.png) no-repeat center/cover;
   }
   .section4 .title_h2 {
@@ -1548,26 +1597,26 @@ ul, ol {
   }
 
   .section5 {
-    padding: 0px 0px 86px 42px;
+    padding: 0px 0px 0px 40px;
     background: url(../img/about-us2.png) no-repeat center/cover;
   }
   .section5 .title_h2 {
     display: block;
   }
 
-  .section4 .title_h2, .section5 .title_h2 {
-    margin-bottom: 11px;
+  .aboutUs__over {
     padding-top: 26px;
   }
 
   .aboutUs__wrap {
     padding-right: 70px;
     padding-bottom: 50px;
+    margin-left: 0;
   }
 
   .section6 {
     background: url(../img/end-page-mobile.png) no-repeat center/cover;
-    padding: 0 0 100px 40px;
+    padding: 0px 0 0px 40px;
   }
 
   .endPage__wrap {
@@ -1623,10 +1672,22 @@ ul, ol {
   }
 
   .endPage__logo {
+    margin-top: 26px;
     width: 230px;
     height: 99px;
-    margin-top: 26px;
-    margin-bottom: 11px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .services__block .content .text {
+    max-width: 309px;
+  }
+
+  .services__block .img {
+    height: 525px;
+  }
+
+  .services__block .content {
+    padding-top: 470px;
   }
 }
 @media screen and (max-width: 430px) {
@@ -1724,11 +1785,11 @@ ul, ol {
   }
 
   .section4, .section5 {
-    padding: 0 0px 50px 12px;
+    padding: 0 0px 0px 12px;
   }
 
   .section6 {
-    padding: 0 0px 50px 12px;
+    padding: 0 0px 0px 12px;
   }
 
   .aboutUs__box {

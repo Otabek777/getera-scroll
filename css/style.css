@@ -1367,7 +1367,7 @@ ul, ol {
     width: 230px;
     height: 99px;
     position: absolute;
-    top: 40px;
+    top: 18px;
     left: 16px;
     margin-bottom: 0;
     -webkit-transition: all 1s ease;
@@ -1591,6 +1591,10 @@ ul, ol {
 @media screen and (max-width: 430px) {
   .services__block .content {
     top: 420px;
+  }
+
+  .logo {
+    top: 50px;
   }
 }
 @media screen and (max-width: 414px) {

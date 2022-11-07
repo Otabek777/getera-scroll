@@ -22,7 +22,6 @@
     pointer-events: none;
     opacity: 0;
   }
-
   .cursor__inner {
     fill: var(--cursor-fill);
     stroke: var(--cursor-stroke);
@@ -1307,11 +1306,9 @@ ul, ol {
   .section1, .section2, .section3, .section6 {
     padding-left: 50px;
   }
-
   .section4, .section5 {
     padding-right: 200px;
   }
-
   .services__block {
     margin-right: 36px;
   }
@@ -1320,28 +1317,22 @@ ul, ol {
   .logo {
     margin-bottom: 70px;
   }
-
   .btn_burgir {
     top: 30px;
   }
-
   .menu_bar {
     top: 5px;
   }
-
   .btn_up, .btn_down {
     right: 80px;
   }
-
   .section1, .section2, .section3, .section6 {
     padding-top: 30px;
     padding-left: 30px;
   }
-
   .section6 {
     padding-bottom: 50px;
   }
-
   .section4, .section5 {
     padding-top: 30px;
   }
@@ -1350,11 +1341,9 @@ ul, ol {
   .aboutUs__block .text:last-child {
     margin-bottom: 0;
   }
-
-  #fp-nav ul li:nth-child(3), #fp-nav ul li:nth-child(4), #fp-nav ul li:nth-child(5) {
+  #fp-nav ul li:nth-child(3), #fp-nav ul li:nth-child(4), #fp-nav ul li:nth-child(5), #fp-nav ul li:nth-child(7) {
     display: none;
   }
-
   .mobile_soc {
     display: none;
     position: fixed;
@@ -1369,23 +1358,18 @@ ul, ol {
     display: block;
     margin-bottom: 23px;
   }
-
   .mobile_soc.active {
     display: block;
   }
-
   .mobile_soc.opacity {
     opacity: 1;
   }
-
   .services_mobile {
     display: block;
   }
-
   .title_h2 {
     display: none;
   }
-
   .section1 {
     padding-bottom: 50px;
     padding-left: 40px;
@@ -1405,11 +1389,9 @@ ul, ol {
         -ms-flex-pack: end;
             justify-content: flex-end;
   }
-
   .getera_bg::after {
     background-position: 45% 0px;
   }
-
   .logo {
     width: 230px;
     height: 99px;
@@ -1420,21 +1402,17 @@ ul, ol {
     -webkit-transition: all 1s ease;
     transition: all 1s ease;
   }
-
   .btn_burgir {
     top: 50px;
     right: 34px;
   }
-
   #fp-nav.fp-right {
     right: 36px;
   }
-
   .menu_bar {
     width: 100%;
     right: 0;
   }
-
   .main.open .section_h1 {
     margin-bottom: 0;
   }
@@ -1443,13 +1421,11 @@ ul, ol {
     line-height: 70px;
     letter-spacing: 0.2em;
   }
-
   .section_h1::after {
     font-size: 60px;
     line-height: 70px;
     letter-spacing: 0.2em;
   }
-
   .section_text {
     width: 303px;
     font-size: 24px;
@@ -1459,38 +1435,31 @@ ul, ol {
     padding: 14px 20px;
     text-align: center;
   }
-
   .section_btns {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-
   .section_btns .btn {
     width: 240px;
     margin: 0;
   }
-
   .section_btns .btn:nth-child(1) {
     margin-bottom: 13px;
   }
-
   .section2, .section3 {
     padding: 0;
   }
-
   .services__block {
     width: 100%;
     min-height: 100vh;
     height: auto;
     margin: 0;
   }
-
   .services__block:nth-child(2) {
     display: none;
   }
-
   .services__block .img {
     height: 700px;
     width: auto;
@@ -1500,7 +1469,6 @@ ul, ol {
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
   }
-
   .services__block .content .title_h3 {
     font-weight: 700;
     font-size: 32px;
@@ -1510,7 +1478,6 @@ ul, ol {
     color: #D8BD8B;
     margin-bottom: 10px;
   }
-
   .services__block .content .text {
     height: auto;
     max-width: 470px;
@@ -1521,7 +1488,6 @@ ul, ol {
     font-size: 16px;
     line-height: 150%;
   }
-
   .services__block .content .title {
     font-size: 36px;
     line-height: 49px;
@@ -1532,48 +1498,38 @@ ul, ol {
     line-height: 30px;
     margin-top: 2px;
   }
-
   .menu_bar .ul {
     padding: 144px 60px 100px 50px;
   }
-
   .menu_bar .item::after {
     right: -60px;
   }
-
   .services__block {
     -webkit-transition: all 0.2s ease;
     transition: all 0.2s ease;
   }
-
   #fp-nav {
     top: auto;
     bottom: 120px;
     -webkit-transform: translate(0);
             transform: translate(0);
   }
-
   #fp-nav ul li, .fp-slidesNav ul li {
     margin-bottom: 60px;
   }
-
   #fp-nav ul li::after {
     height: 60px;
   }
-
   .btn_up {
     top: auto;
-    bottom: 500px;
+    bottom: 420px;
   }
-
   .btn_down {
     bottom: 50px;
   }
-
   .btn_up, .btn_down {
     right: 43px;
   }
-
   .services__block .content {
     position: relative;
     top: auto;
@@ -1583,11 +1539,9 @@ ul, ol {
     padding-top: 630px;
     padding-bottom: 70px;
   }
-
   .menu_bar {
     top: 12px;
   }
-
   .section4 {
     padding: 0px 0px 0px 40px;
     background: url(../img/about-us1.png) no-repeat center/cover;
@@ -1595,7 +1549,6 @@ ul, ol {
   .section4 .title_h2 {
     display: block;
   }
-
   .section5 {
     padding: 0px 0px 0px 40px;
     background: url(../img/about-us2.png) no-repeat center/cover;
@@ -1603,27 +1556,22 @@ ul, ol {
   .section5 .title_h2 {
     display: block;
   }
-
   .aboutUs__over {
     padding-top: 26px;
   }
-
   .aboutUs__wrap {
     padding-right: 70px;
     padding-bottom: 80px;
     margin-left: 0;
   }
-
   .section6 {
     background: url(../img/end-page-mobile.png) no-repeat center/cover;
     padding: 0px 0 0px 40px;
   }
-
   .endPage__wrap {
     padding-right: 70px;
     margin-bottom: 126px;
   }
-
   .endPage__btns {
     max-width: 240px;
     width: 100%;
@@ -1638,7 +1586,6 @@ ul, ol {
     margin: 0;
     margin-bottom: 13px;
   }
-
   .aboutUs__wrap::after {
     width: 214px;
     height: 90px;
@@ -1647,30 +1594,24 @@ ul, ol {
     top: 10px;
     background: url(../img/leaflet.svg) no-repeat center/cover;
   }
-
   .aboutUs__wrap .title {
     font-size: 32px;
     line-height: 44px;
     margin-bottom: 24px;
   }
-
   .aboutUs__wrap .h5 {
     margin-bottom: 57px;
   }
-
   .aboutUs__box {
     width: 100% !important;
     margin-bottom: 40px;
   }
-
   .aboutUs__box:last-child {
     margin-bottom: 0;
   }
-
   .endPage__wrap::after {
     display: none;
   }
-
   .endPage__logo {
     margin-top: 26px;
     width: 230px;
@@ -1681,11 +1622,9 @@ ul, ol {
   .services__block .content .text {
     max-width: 309px;
   }
-
   .services__block .img {
     height: 525px;
   }
-
   .services__block .content {
     padding-top: 470px;
   }
@@ -1698,75 +1637,60 @@ ul, ol {
 @media screen and (max-width: 400px) {
   #fp-nav {
     top: auto;
-    bottom: 100px;
+    bottom: 95px;
     -webkit-transform: translate(0);
             transform: translate(0);
   }
-
   #fp-nav ul li, .fp-slidesNav ul li {
     margin-bottom: 50px;
   }
-
   #fp-nav ul li::after {
     height: 50px;
   }
-
   .btn_up {
     top: auto;
-    bottom: 430px;
+    bottom: 360px;
   }
-
   .btn_down {
     bottom: 30px;
   }
-
   .mobile_soc {
     right: 20px;
     top: 100px;
   }
-
   .main.open .section_h1 .h1, .section_h1::after {
     font-size: 46px;
   }
-
   .section_text {
     width: 220px;
     font-size: 20px;
     padding: 14px 0;
   }
-
   .section_btns .btn {
     width: 220px;
     height: 50px;
   }
-
   .services__block .content {
     padding-left: 12px;
     padding-right: 50px;
   }
-
   #fp-nav.fp-right {
     right: 20px;
   }
-
   .btn_up, .btn_down {
     right: 26px;
   }
-
   .btn_burgir {
     top: 40px;
     right: 18px;
   }
-
   .menu_bar .ul {
     padding-left: 30px;
     padding-right: 46px;
   }
-
   .menu_bar .item::after {
     right: -45px;
   }
-
   .services__block .content .title {
     font-size: 24px;
     line-height: 26px;
@@ -1777,31 +1701,25 @@ ul, ol {
     line-height: 18px;
     margin-top: 0;
   }
-
   .services__block .content .title_h3 {
     font-size: 24px;
     line-height: 26px;
     margin-bottom: 12px;
   }
-
   .section4, .section5 {
     padding: 0 0px 0px 12px;
   }
-
   .section6 {
     padding: 0 0px 0px 12px;
   }
-
   .aboutUs__box {
     margin-bottom: 56px;
   }
-
   .endPage__title {
     font-size: 32px;
     line-height: 44px;
     margin-bottom: 24px;
   }
-
   .endPage__text_bottom {
     max-width: 230px;
     width: 100%;
@@ -1815,15 +1733,12 @@ ul, ol {
     font-size: 14px;
     margin-bottom: 12px;
   }
-
   .aboutUs__box {
     margin-bottom: 45px;
   }
-
   .services__block .img {
     height: 400px;
   }
-
   .services__block .content {
     padding-top: 360px;
   }

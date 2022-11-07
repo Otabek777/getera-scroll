@@ -1748,3 +1748,29 @@ ul, ol {
     padding-top: 360px;
   }
 }
+@media screen and (max-width: 370px) {
+  #fp-nav ul li, .fp-slidesNav ul li {
+    margin-bottom: 30px;
+  }
+  #fp-nav ul li::after {
+    height: 30px;
+  }
+  #fp-nav ul li a, .fp-slidesNav ul li a {
+    width: 20px;
+    height: 20px;
+  }
+  #fp-nav ul li a span, .fp-slidesNav ul li a span {
+    min-width: 6px !important;
+    width: 6px !important;
+    height: 6px !important;
+  }
+  .btn_up {
+    bottom: 270px;
+  }
+  #fp-nav {
+    bottom: 88px;
+  }
+  .mobile_soc {
+    top: 92px;
+  }
+}

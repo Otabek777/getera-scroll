@@ -67,33 +67,33 @@ $("#btn_down").click(function() {
 function scrollAnimation (scrollEvent) {
     $(document).on(scrollEvent, function(e){
         setTimeout(function() {
-            // if($(".section2").hasClass('active')) {
-            //     $(".section1").addClass("bg-bottom");
-            // };
-            // if($(".section3").hasClass('active')) {
-            //     $(".section4").addClass("bg-top");
-            // };
-            // if($(".section4").hasClass('active')) {
-            //     $(".section5").addClass("bg-top");
-            // };
-            // if($(".section5").hasClass('active')) {
-            //     $(".section4").addClass("bg-bottom");
-            //     $(".section6").addClass("bg-top");
-            // };
-            // if($(".section6").hasClass('active')) {
-            //     $(".section5").addClass("bg-bottom");
-            // };
+            if($(".section2").hasClass('active')) {
+                $(".section1").addClass("bg-bottom");
+            };
+            if($(".section3").hasClass('active')) {
+                $(".section4").addClass("bg-top");
+            };
+            if($(".section4").hasClass('active')) {
+                $(".section5").addClass("bg-top");
+            };
+            if($(".section5").hasClass('active')) {
+                $(".section4").addClass("bg-bottom");
+                $(".section6").addClass("bg-top");
+            };
+            if($(".section6").hasClass('active')) {
+                $(".section5").addClass("bg-bottom");
+            };
     
-            // function deleteClassBg (className) {
-            //     if($(className).hasClass('active')) {
-            //         $(className).removeClass("bg-top");
-            //         $(className).removeClass("bg-bottom");
-            //     }
-            // };
-            // deleteClassBg(".section1");
-            // deleteClassBg(".section4");
-            // deleteClassBg(".section5");
-            // deleteClassBg(".section6");
+            function deleteClassBg (className) {
+                if($(className).hasClass('active')) {
+                    $(className).removeClass("bg-top");
+                    $(className).removeClass("bg-bottom");
+                }
+            };
+            deleteClassBg(".section1");
+            deleteClassBg(".section4");
+            deleteClassBg(".section5");
+            deleteClassBg(".section6");
             if ($(".section1").hasClass('active')) {
                 $("#btn_up").addClass("opacity");
                 $(".mobile_soc").removeClass("opacity");

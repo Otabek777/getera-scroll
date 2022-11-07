@@ -117,3 +117,4 @@ function scrollAnimation (scrollEvent) {
 }
 scrollAnimation('wheel');
 scrollAnimation('click');
+scrollAnimation('touchstart');

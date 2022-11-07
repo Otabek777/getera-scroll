@@ -1773,4 +1773,12 @@ ul, ol {
   .mobile_soc {
     top: 92px;
   }
+  #fp-nav ul li::after {
+    top: 20px;
+  }
+}
+@media screen and (max-width: 321px) {
+  .mobile_soc {
+    display: none !important;
+  }
 }

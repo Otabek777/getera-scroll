@@ -328,6 +328,13 @@
             navigation: true,
             scrollingSpeed: 1000,
             navigationTooltips: ['section1', 'section2', 'section3', 'section4', 'section5', 'section6', 'section7', 'section8'],
+            onLeave: function(origin, destination, direction, trigger) {
+                if (direction == 'up') {
+                    const scrollTop = $(destination.item).find('.fp-overflow').scrollTop();
+                    if (scrollTop > 0)
+                        $(destination.item).find('.fp-overflow').scrollTop(0);
+                }
+            },
         });
     </script>
     <!-- <script src="js/js.79e91eed.js"></script> -->

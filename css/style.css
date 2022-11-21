@@ -1637,7 +1637,7 @@ ul, ol {
     justify-content: flex-end;
   }
   .section1, .section2, .section3, .section4, .section5, .section6 {
-    /* height: 100vh; */
+    height: auto;
     scroll-snap-align: start;
     /* overflow-y: auto; */
   }

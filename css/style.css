@@ -1661,7 +1661,7 @@ ul, ol {
 }
 @media screen and (max-width: 430px) {
   .logo {
-    top: 50px;
+    top: 30px;
   }
 }
 @media screen and (max-width: 400px) {

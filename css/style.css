@@ -114,7 +114,7 @@ ul, ol {
 
 .main {
   width: 100%;
-  min-height: 110vh;
+  min-height: 100vh;
   position: relative;
   z-index: -999;
   opacity: 0;
@@ -1619,6 +1619,10 @@ ul, ol {
   }
 }
 @media screen and (max-width: 768px) {
+  .main {
+    min-height: auto;
+    max-height: 90vh;
+  }
   .services__block .content .text {
     max-width: 309px;
   }

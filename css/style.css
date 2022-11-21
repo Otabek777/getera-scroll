@@ -1646,6 +1646,10 @@ ul, ol {
     height: auto;
     min-height: auto;
   }
+  .mobile_soc {
+    display: block;
+    opacity: 1;
+  }
 }
 
 @media screen and (max-width: 768px) {

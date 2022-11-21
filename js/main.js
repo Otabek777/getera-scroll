@@ -112,7 +112,7 @@ function scrollAnimation (scrollEvent) {
             } else {
                 $("#btn_down").removeClass("opacity");
             }
-        }, 100);
+        }, 10);
     });
 }
 scrollAnimation('wheel');

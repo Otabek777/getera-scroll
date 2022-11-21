@@ -321,7 +321,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.12/fullpage.min.js"></script>
     <script src="js/main.js"></script>
     <script>
-        // if (window.innerWidth > 1000) {
+        if (window.innerWidth > 1000) {
             new fullpage('#fullpage',{
                 autoScrolling:true,
                 scrollHorizontally: true,
@@ -336,7 +336,11 @@
                     }
                 },
             });
-        // };
+        } else {
+            for(var i = 1; i < 7; i++) {
+                $(".section.section"+i).addClass("active");
+            }
+        }
         
     </script>
     <!-- <script src="js/js.79e91eed.js"></script> -->

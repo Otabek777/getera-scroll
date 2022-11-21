@@ -1638,6 +1638,7 @@ ul, ol {
   }
   .section1, .section2, .section3, .section4, .section5, .section6 {
     scroll-snap-align: start;
+    scroll-snap-stop: always;
     overflow-y: auto;
   }
   /* .section::-webkit-scrollbar {width: 0px;} */

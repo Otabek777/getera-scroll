@@ -30,7 +30,6 @@
 }
 body {
   font-family: "Cormorant Infant", serif;
-  height: 110vh;
 }
 
 button {
@@ -115,7 +114,7 @@ ul, ol {
 
 .main {
   width: 100%;
-  min-height: 100vh;
+  min-height: 110vh;
   position: relative;
   z-index: -999;
   opacity: 0;

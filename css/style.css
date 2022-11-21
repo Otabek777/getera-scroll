@@ -1620,12 +1620,16 @@ ul, ol {
     height: 125px;
   }
 }
-@media screen and (max-width: 768px) {
-  .getera_bg {
-    display: none !important;
-  }
+
+@media screen and (max-width: 900px) {
   .btn_up, .btn_down {
     display: none;
+  }
+  #fullpage {
+    width: 100%;
+    height: 100vh;
+    overflow-y: auto;
+    scroll-snap-type: y mandatory;
   }
   .section1 {
     display: flex;
@@ -1633,15 +1637,17 @@ ul, ol {
     justify-content: flex-end;
   }
   .section1, .section2, .section3, .section4, .section5, .section6 {
-    min-height: 100vh;
-    height: auto;
+    height: 100vh;
+    scroll-snap-align: start;
+    overflow-y: auto;
   }
   .main {
     height: auto;
     min-height: auto;
   }
+}
 
-  /*  */
+@media screen and (max-width: 768px) {
   .services__block .content .text {
     max-width: 309px;
   }

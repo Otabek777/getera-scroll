@@ -11,9 +11,6 @@
 :focus {
   outline: none;
 }
-.section_h1, .section_text, .section_btns, .services__block .content, .aboutUs__slider {
-  display: none !important;
-}
 
 @media (any-pointer: fine) {
   .cursor {

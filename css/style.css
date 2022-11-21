@@ -1398,7 +1398,7 @@ ul, ol {
     width: 230px;
     height: 99px;
     position: absolute;
-    top: 18px;
+    top: 20px;
     left: 16px;
     margin-bottom: 0;
     -webkit-transition: all 1s ease;
@@ -1637,9 +1637,9 @@ ul, ol {
     justify-content: flex-end;
   }
   .section1, .section2, .section3, .section4, .section5, .section6 {
-    height: 100vh;
+    /* height: 100vh; */
     scroll-snap-align: start;
-    overflow-y: auto;
+    /* overflow-y: auto; */
   }
   .section::-webkit-scrollbar {width: 0px;}
   .main {
@@ -1659,11 +1659,11 @@ ul, ol {
     padding-top: 470px;
   }
 }
-@media screen and (max-width: 430px) {
+/* @media screen and (max-width: 430px) {
   .logo {
     top: 30px;
   }
-}
+} */
 @media screen and (max-width: 400px) {
   #fp-nav {
     top: auto;

@@ -1641,6 +1641,7 @@ ul, ol {
     scroll-snap-align: start;
     overflow-y: auto;
   }
+  .section::-webkit-scrollbar {width: 0px;}
   .main {
     height: auto;
     min-height: auto;

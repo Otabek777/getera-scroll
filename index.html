@@ -9,6 +9,14 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media.css">
     <title></title>
+    <!-- <script>
+        if (window.innerWidth < 900) {
+            $.scrollify({
+                section : ".section",
+            });
+        }
+        
+    </script> -->
 </head>
 <body>
     <div class="getera_bg"></div>
@@ -59,7 +67,7 @@
     <div class="btn_down" id="btn_down"></div>
     <div class="main">
         <div id="fullpage">
-            <div class="section1 section">
+            <div class="section1 section example-classname">
                 <a href="#" class="logo">
                     <img src="img/logo.svg" alt="">
                 </a>
@@ -86,7 +94,7 @@
                     </div>
                 </div>
             </div>
-            <div class="section2 section services">
+            <div class="section2 section services example-classname">
                 <p class="title_h2">
                     Услуги
                 </p>
@@ -117,7 +125,7 @@
                     </a>
                 </div>
             </div>
-            <div class="section2 section services services_mobile">
+            <div class="section2 section services services_mobile example-classname">
                 <div class="services__box">
                     <a href="#" class="services__block">
                         <div class="img_wrap">
@@ -133,7 +141,7 @@
                     </a>
                 </div>
             </div>
-            <div class="section3 section services">
+            <div class="section3 section services example-classname">
                 <p class="title_h2">
                     Услуги
                 </p>
@@ -171,7 +179,7 @@
                     </a>
                 </div>
             </div>
-            <div class="section3 section services services_mobile">
+            <div class="section3 section services services_mobile example-classname">
                 <div class="services__box">
                     <a href="#" class="services__block">
                         <div class="img_wrap">
@@ -189,7 +197,7 @@
                     </a>
                 </div>
             </div>
-            <div class="section4 section aboutUs">
+            <div class="section4 section aboutUs example-classname">
                 <div class="aboutUs__over">
                     <div class="aboutUs__wrap">
                         <p class="title_h2">О нас</p>
@@ -207,7 +215,7 @@
                     </div>
                 </div>
             </div>
-            <div class="section5 section aboutUs">
+            <div class="section5 section aboutUs example-classname">
                 <div class="aboutUs__over">
                     <div class="aboutUs__wrap">
                         <p class="title_h2">О нас</p>
@@ -274,7 +282,7 @@
                     </div>
                 </div>
             </div>
-            <div class="section6 section endPage page_last">
+            <div class="section6 section endPage page_last example-classname">
                 <a href="#" class="endPage__logo">
                     <img src="img/logo.svg" alt="">
                 </a>
@@ -319,9 +327,10 @@
     
     <script src="js/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.12/fullpage.min.js"></script>
+    <script src="js/jquery.scrollify.js"></script>
     <script src="js/main.js"></script>
     <script>
-        if (window.innerWidth > 1000) {
+        if (window.innerWidth > 900) {
             new fullpage('#fullpage',{
                 autoScrolling:true,
                 scrollHorizontally: true,
@@ -337,12 +346,17 @@
                 },
             });
         } else {
+            $(".main").addClass("open");
             for(var i = 1; i < 7; i++) {
                 $(".section.section"+i).addClass("active");
             }
-        }
+            $(function() {
+                $.scrollify({
+                    section : ".example-classname",
+                });
+            });
+        };
         
     </script>
-    <!-- <script src="js/js.79e91eed.js"></script> -->
 </body>
 </html>

@@ -28,7 +28,9 @@
     stroke-width: var(--cursor-stroke-width);
   }
 }
+
 body {
+  width: 100%;
   font-family: "Cormorant Infant", serif;
 }
 
@@ -1619,17 +1621,18 @@ ul, ol {
   }
 }
 @media screen and (max-width: 768px) {
+  .getera_bg {
+    display: none !important;
+  }
   .btn_up, .btn_down {
     display: none;
   }
-  .section1 {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-  }
   .section1, .section2, .section3, .section4, .section5, .section6 {
     min-height: 100vh;
+  }
+  .main {
     height: auto;
+    min-height: auto;
   }
 
   /*  */

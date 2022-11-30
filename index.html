@@ -321,28 +321,29 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.12/fullpage.min.js"></script>
     <script src="js/main.js"></script>
     <script>
-        if (window.innerWidth > 900) {
-            new fullpage('#fullpage',{
-                autoScrolling:true,
-                scrollHorizontally: true,
-                navigation: true,
-                scrollingSpeed: 1000,
-                navigationTooltips: ['section1', 'section2', 'section3', 'section4', 'section5', 'section6', 'section7', 'section8'],
-                onLeave: function(origin, destination, direction, trigger) {
-                    if (direction == 'up') {
-                        const scrollTop = $(destination.item).find('.fp-overflow').scrollTop();
-                        if (scrollTop > 0)
-                            $(destination.item).find('.fp-overflow').scrollTop(0);
-                    }
-                },
-            });
-        } else {
-            $(".getera_bg").addClass("none");
-            $(".main").addClass("open");
-            for(var i = 1; i < 7; i++) {
-                $(".section.section"+i).addClass("active");
-            };
-        };
+        new fullpage('#fullpage',{
+            autoScrolling:true,
+            scrollHorizontally: true,
+            navigation: true,
+            scrollingSpeed: 1000,
+            navigationTooltips: ['section1', 'section2', 'section3', 'section4', 'section5', 'section6', 'section7', 'section8'],
+            onLeave: function(origin, destination, direction, trigger) {
+                if (direction == 'up') {
+                    const scrollTop = $(destination.item).find('.fp-overflow').scrollTop();
+                    if (scrollTop > 0)
+                        $(destination.item).find('.fp-overflow').scrollTop(0);
+                }
+            },
+        });
+        // if (window.innerWidth > 900) {
+            
+        // } else {
+        //     $(".getera_bg").addClass("none");
+        //     $(".main").addClass("open");
+        //     for(var i = 1; i < 7; i++) {
+        //         $(".section.section"+i).addClass("active");
+        //     };
+        // };
         
     </script>
 </body>

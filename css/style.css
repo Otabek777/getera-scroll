@@ -1621,7 +1621,7 @@ ul, ol {
   }
 }
 
-@media screen and (max-width: 900px) {
+/* @media screen and (max-width: 900px) {
   .btn_up, .btn_down {
     display: none;
   }
@@ -1641,7 +1641,6 @@ ul, ol {
     scroll-snap-stop: always;
     overflow-y: auto;
   }
-  /* .section::-webkit-scrollbar {width: 0px;} */
   .main {
     height: auto;
     min-height: auto;
@@ -1650,7 +1649,7 @@ ul, ol {
     display: block;
     opacity: 1;
   }
-}
+} */
 
 @media screen and (max-width: 768px) {
   .services__block .content .text {
